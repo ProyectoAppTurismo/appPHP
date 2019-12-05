@@ -11,17 +11,17 @@
 <body>
     <header>FYH</header>
     <main>
-        <form action="index.php">
+        <form name="opciones" action="index.php">
             <div id="compañia">
-                <p>Empecemos por saber con quién irás de vacaciones: </p>
-                <input type="radio" name="cia" value="solo">Solo<br>
-                <input type="radio" name="cia" value="amigos">Amigos<br>
-                <input type="radio" name="cia" value="pareja">Pareja<br>
-                <input type="radio" name="cia" value="familia">Familia<br>
+                <p>¿Con quién te gustaría ir de vacaciones?</p>
+                <input type="radio" name="company" value="solo">Solo<br>
+                <input type="radio" name="company" value="amigos">Amigos<br>
+                <input type="radio" name="company" value="pareja">Pareja<br>
+                <input type="radio" name="company" value="familia">Familia<br>
             </div>
 
             <div id="tipo">
-                    <p>¿Eres mas de playa o de montaña? </p>
+                    <p>¿Eres más de playa o de montaña? </p>
                     <input type="radio" name="tipo" value="playa">Costa<br>
                     <input type="radio" name="tipo" value="interior">Interior<br>
             </div>
@@ -34,18 +34,18 @@
             </div>
 
             <div id="afluencia">
-                    <p>Empecemos por saber con quién irás de vacaciones: </p>
-                    <input type="radio" name="afluencia" value="bajo">Cuanta menos gente, ¡mejor!<br>
-                    <input type="radio" name="afluencia" value="medio">No me apetece estar sólo, pero tampoco quiero agobios<br>
-                    <input type="radio" name="afluencia" value="alto">¡Me encanta que haya ambiente!<br>
+                    <p>¿Prefieres un plan tranquilito o te gusta el ambientazo?</p>
+                    <input type="radio" name="afluencia" value="baja">Cuanta menos gente, ¡mejor!<br>
+                    <input type="radio" name="afluencia" value="media">No me apetece estar sólo, pero tampoco quiero agobios<br>
+                    <input type="radio" name="afluencia" value="alta">¡Me encanta que haya ambiente!<br>
             </div>
 
             <div id="tipotur">
                 <p>¿Que tipo de experiencia buscas?</p>
-                <select name="tipotur">
+                <select name="categoria">
+                    <option value="Categoría" selected>Elija su experiencia</option>
                     <option value="Cultural">Cultural</option>
                     <option value="Sol y playa">Sol y playa</option>
-                    <option value="Religioso">Religioso</option>
                     <option value="Turismo de noche">Turismo de noche</option>
                     <option value="Deportivo">Deportivo</option>
                     <option value="Salud">Salud</option>
@@ -55,10 +55,8 @@
                 </select>
             </div>
 
-            <input type="submit" name="orden" value="lista">Ver lista</button>
-            <input type="submit" name="orden" value="mapa">Ver en mapa</button>
-
-
+            <input type="submit" name="orden" value="DESTINOS" onclick="listadoOpciones(opciones)">Ver lista</button><br>
+            <input type="submit" name="orden" value="MAPA">Ver en mapa</button>
         </form>
     </main>
 </body>
