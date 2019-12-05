@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>FYH</header>
+    <main>
+        <form action="index.php">
+            <div id="compañia">
+                <p>Empecemos por saber con quién irás de vacaciones: </p>
+                <input type="radio" name="cia" value="solo">Solo<br>
+                <input type="radio" name="cia" value="amigos">Amigos<br>
+                <input type="radio" name="cia" value="pareja">Pareja<br>
+                <input type="radio" name="cia" value="familia">Familia<br>
+            </div>
+
+            <div id="tipo">
+                    <p>¿Eres mas de playa o de montaña? </p>
+                    <input type="radio" name="tipo" value="playa">Costa<br>
+                    <input type="radio" name="tipo" value="interior">Interior<br>
+            </div>
+
+            <div id="precio">
+                    <p> Sigamos con el precio:  </p>
+                    <input type="radio" name="precio" value="€">€<br>
+                    <input type="radio" name="precio" value="€€">€€<br>
+                    <input type="radio" name="precio" value="€€€">€€€<br>
+            </div>
+
+            <div id="afluencia">
+                    <p>Empecemos por saber con quién irás de vacaciones: </p>
+                    <input type="radio" name="afluencia" value="bajo">Cuanta menos gente, ¡mejor!<br>
+                    <input type="radio" name="afluencia" value="medio">No me apetece estar sólo, pero tampoco quiero agobios<br>
+                    <input type="radio" name="afluencia" value="alto">¡Me encanta que haya ambiente!<br>
+            </div>
+
+            <div id="tipotur">
+                <p>¿Que tipo de experiencia buscas?</p>
+                <select name="tipotur">
+                    <option value="Cultural">Cultural</option>
+                    <option value="Sol y playa">Sol y playa</option>
+                    <option value="Religioso">Religioso</option>
+                    <option value="Turismo de noche">Turismo de noche</option>
+                    <option value="Deportivo">Deportivo</option>
+                    <option value="Salud">Salud</option>
+                    <option value="Rural">Rural</option>
+                    <option value="Festival">Festival</option>
+                    <option value="Eventos">Eventos</option>
+                </select>
+            </div>
+
+            <input type="submit" name="orden" value="lista">Ver lista</button>
+            <input type="submit" name="orden" value="mapa">Ver en mapa</button>
+
+
+        </form>
+    </main>
+</body>
+</html>
