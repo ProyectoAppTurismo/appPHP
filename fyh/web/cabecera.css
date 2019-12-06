@@ -1,0 +1,59 @@
+@font-face{font-family: fontasique; src: url(fuentes/fontastique.ttf)}
+@font-face{font-family: sunflower; src: url(fuentes/Sunflower.otf)}
+
+body{
+	background-image: url(imgs/festival.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+header{
+	background:rgba(000,000,000,0);
+	margin: 0;
+	width: 100%;
+	display: inline-block;
+}
+
+header #titulo{
+	color: white;
+	font-size: 1.5em;
+	line-height: 220%;
+	font-family: sunflower;
+	margin-left: 0.5%;
+	float: left;
+}
+
+header #titulo #experience{
+	color: white;
+	font-size: 1.1rem;
+	font-family: fontasique;
+}
+
+header #icono{
+	height: 3.3%;
+	width: 3.3%;
+	filter: invert(100);
+	float:left;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
+}
+
+header #enlaces{
+	float: right;
+	font-family: fontasique;
+	padding-right: 1%;
+}
+
+header #enlaces a{
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	line-height: 300%;
+}
+
+header #enlaces a:hover{
+	border-bottom: 2px solid white;
+}
+

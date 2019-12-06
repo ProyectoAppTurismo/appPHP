@@ -5,7 +5,7 @@ function listadoOpciones(formulario){
 	var afluencia = formulario.afluencia.value;
 	var categoria = formulario.categoria.value;
 
-	alert("Esta es tu selección:\nCompañia: "+compania+"\nTipo: "+tipo+"\nPrecio: "
+	alert("Esta es tu selección:\n\nCompañia: "+compania+"\nTipo: "+tipo+"\nPrecio: "
 		+precio+"\nAfluencia: "+afluencia+"\nExperiencia: "+categoria);
 
 	var confirmacion = confirm("¿Estas de acuerdo con tu elección?");
