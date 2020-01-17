@@ -3,7 +3,7 @@
 class BaseDatos extends SQLite3{
 	function __construct()
 	{
-		$this->open("sqlite/DESTINO.db");
+		$this->open("sqlite/Destinos_BD.db");
 	}
 
 	function Consulta(){
@@ -12,7 +12,7 @@ class BaseDatos extends SQLite3{
 		echo "la base de datos no se pudo abrir correctamente";
 	}
 	
-	$consulta="SELECT d_nombre, d_descripcion FROM DESTINO WHERE d_compania= :cia AND d_tipo= :tipo AND d_precio= :precio AND d_afluencia= :afluencia AND d_tipo_turismo= :tipotur";
+	$consulta="SELECT d_nombre, d_descripcion FROM Destinos WHERE d_compania= :cia AND d_tipo= :tipo AND d_precio= :precio AND d_afluencia= :afluencia AND d_tipo_turismo= :tipotur";
 	$resultado=$bd->prepare($consulta);
 	$resultado->bindValue(':cia', $_SESSION['cia']);
 	$resultado->bindValue(':tipo', $_SESSION['tipo']);
