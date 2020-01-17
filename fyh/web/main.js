@@ -12,5 +12,7 @@ function listadoOpciones(formulario){
 
 	if(confirmacion == false){
 		formulario.reset();
+	}else{
+		window.location.href("index.php");
 	}
 }

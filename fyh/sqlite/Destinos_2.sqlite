@@ -1,5 +1,5 @@
 BEGIN TRANSACTION;
-CREATE TABLE IF NOT EXISTS "destinos definitivo_modificado" (
+CREATE TABLE IF NOT EXISTS "destinos_definitivo_modificado" (
 	"id"	INTEGER PRIMARY KEY,
 	"nombre"	TEXT,
 	"compania"	TEXT,
