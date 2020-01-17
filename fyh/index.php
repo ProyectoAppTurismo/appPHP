@@ -1,8 +1,10 @@
 <?php
 session_start();
 
+
 include_once 'app/controlador.php';
 include_once 'app/modelo.php';
+
 
 
  $rutaUsuario=[

@@ -6,24 +6,24 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script type="text/javascript" src='web/main.js'></script>
+    <script src='main.js'></script>
 </head>
 <body>
     <header>FYH</header>
     <main>
-        <form name="opciones" action="index.php">
+        <form action="index.php">
             <div id="compañia">
-                <p>¿Con quién te gustaría ir de vacaciones?</p>
-                <input type="radio" name="company" value="solo">Solo<br>
-                <input type="radio" name="company" value="amigos">Amigos<br>
-                <input type="radio" name="company" value="pareja">Pareja<br>
-                <input type="radio" name="company" value="familia">Familia<br>
+                <p>Empecemos por saber con quién irás de vacaciones: </p>
+                <input type="radio" name="cia" value="Sol@">Solo<br>
+                <input type="radio" name="cia" value="Amigos">Amigos<br>
+                <input type="radio" name="cia" value="Pareja">Pareja<br>
+                <input type="radio" name="cia" value="Familia">Familia<br>
             </div>
 
             <div id="tipo">
-                    <p>¿Eres más de playa o de montaña? </p>
-                    <input type="radio" name="tipo" value="playa">Costa<br>
-                    <input type="radio" name="tipo" value="interior">Interior<br>
+                    <p>¿Eres mas de playa o de montaña? </p>
+                    <input type="radio" name="tipo" value="Costa">Costa<br>
+                    <input type="radio" name="tipo" value="Interior">Interior<br>
             </div>
 
             <div id="precio">
@@ -34,18 +34,18 @@
             </div>
 
             <div id="afluencia">
-                    <p>¿Prefieres un plan tranquilito o te gusta el ambientazo?</p>
-                    <input type="radio" name="afluencia" value="baja">Cuanta menos gente, ¡mejor!<br>
-                    <input type="radio" name="afluencia" value="media">No me apetece estar sólo, pero tampoco quiero agobios<br>
-                    <input type="radio" name="afluencia" value="alta">¡Me encanta que haya ambiente!<br>
+                    <p>Empecemos por saber con quién irás de vacaciones: </p>
+                    <input type="radio" name="afluencia" value="Baja">Cuanta menos gente, ¡mejor!<br>
+                    <input type="radio" name="afluencia" value="Media">No me apetece estar sólo, pero tampoco quiero agobios<br>
+                    <input type="radio" name="afluencia" value="Alta">¡Me encanta que haya ambiente!<br>
             </div>
 
             <div id="tipotur">
                 <p>¿Que tipo de experiencia buscas?</p>
-                <select name="categoria">
-                    <option value="Categoría" selected>Elija su experiencia</option>
+                <select name="tipotur">
                     <option value="Cultural">Cultural</option>
                     <option value="Sol y playa">Sol y playa</option>
+                    <option value="Religioso">Religioso</option>
                     <option value="Turismo de noche">Turismo de noche</option>
                     <option value="Deportivo">Deportivo</option>
                     <option value="Salud">Salud</option>
@@ -55,8 +55,10 @@
                 </select>
             </div>
 
-            <input type="submit" name="orden" value="lista" onclick="listadoOpciones(this.form)"><br>
-            <input type="submit" name="orden" value="MAPA">
+            <input type="submit" name="orden" value="lista">Ver lista</button>
+            <input type="submit" name="orden" value="mapa">Ver en mapa</button>
+
+
         </form>
     </main>
 </body>
